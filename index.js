@@ -23,6 +23,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const discord_js_1 = __importStar(require("discord.js"));
+const wokcommands_1 = __importDefault(require("wokcommands"));
+const path_1 = __importDefault(require("path"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const client = new discord_js_1.default.Client({
@@ -33,17 +35,9 @@ const client = new discord_js_1.default.Client({
 });
 client.on('ready', () => {
     console.log('bot is ready');
-});
-client.on('messageCreate', (message) => {
-    if (message.content === 'ping') {
-        message.reply({
-            content: 'Béo ngu!',
-        });
-    }
-    else if (message.content.toLowerCase() === 'owo') {
-        message.reply({
-            content: "what's this?",
-        });
-    }
+    new wokcommands_1.default(client, {
+        commandsDir: path_1.default.join(__dirname, 'commands'),
+        testServers: ['724194517863104543']
+    });
 });
 client.login(process.env.TOKEN);
