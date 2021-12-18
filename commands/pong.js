@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     category: 'ping pong',
-    description: 'Replies With An dốt',
+    description: 'Replies with Bùi dốt',
     slash: 'both',
     testOnly: true,
     callback: ({}) => {
