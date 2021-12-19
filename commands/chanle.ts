@@ -1,5 +1,6 @@
 
-import { ICommand } from "wokcommands";
+import { Emoji, MessageEmbed } from 'discord.js';
+import { ICommand } from 'wokcommands';
 
 export default {
     category: 'fun',
@@ -10,7 +11,7 @@ export default {
 
     callback: ({}) => {
         let num = Math.round(Math.random()*100+1);
-        return num;
+        return num.toString()
+        
     },
-
 } as ICommand

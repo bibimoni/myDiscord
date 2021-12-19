@@ -23,7 +23,6 @@ export default {
 
     callback: ({ client, args }) => {
         if (args[0] === 'in development') {
-
             client.user?.setPresence({
                 status: 'dnd',
                 activities: [
@@ -34,7 +33,6 @@ export default {
             })
         }
         if (args[0] === 'sleeping') {
-
             client.user?.setPresence({
                 status: 'dnd',
                 activities: [
@@ -44,9 +42,7 @@ export default {
                 ]
             })
         }
-
         if (args[0] === 'working') {
-
             client.user?.setPresence({
                 status: 'online',
                 activities: [
