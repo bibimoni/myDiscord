@@ -6,6 +6,7 @@ exports.default = {
     slash: 'both',
     testOnly: true,
     callback: ({}) => {
-        return Math.round(Math.random() * 100 + 1);
-    }
+        let num = Math.round(Math.random() * 100 + 1);
+        return num;
+    },
 };
