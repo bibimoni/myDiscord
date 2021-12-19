@@ -17,7 +17,7 @@ exports.default = {
             status: 'dnd',
             activities: [
                 {
-                    name: 'name'
+                    name: ''
                 }
             ]
         });

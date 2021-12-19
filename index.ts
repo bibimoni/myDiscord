@@ -18,7 +18,9 @@ client.on('ready', async () => {
     console.log('bot is ready');
 
     new WOKCommands(client, {
+
        commandsDir: path.join(__dirname, 'commands') ,
+       featuresDir: path.join(__dirname, 'features'),
        testServers: ['724194517863104543'],
        //mongoUri: process.env.MONGO_URI,
     });
