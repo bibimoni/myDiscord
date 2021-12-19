@@ -24,4 +24,4 @@ export default {
         }
     },
 } as ICommand
-//ngu
+//!ngu

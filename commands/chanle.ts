@@ -11,7 +11,6 @@ export default {
 
     callback: ({}) => {
         let num = Math.round(Math.random()*100+1);
-        return num.toString()
-        
+        return num.toString()      
     },
 } as ICommand
