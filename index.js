@@ -48,7 +48,7 @@ client.on('ready', () => __awaiter(void 0, void 0, void 0, function* () {
     new wokcommands_1.default(client, {
         commandsDir: path_1.default.join(__dirname, 'commands'),
         featuresDir: path_1.default.join(__dirname, 'features'),
-        testServers: ['724194517863104543'],
+        testServers: ['724194517863104543', '896007142795014144'],
         //mongoUri: process.env.MONGO_URI,
     });
 }));

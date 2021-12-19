@@ -21,7 +21,7 @@ client.on('ready', async () => {
 
        commandsDir: path.join(__dirname, 'commands') ,
        featuresDir: path.join(__dirname, 'features'),
-       testServers: ['724194517863104543'],
+       testServers: ['724194517863104543', '896007142795014144'],
        //mongoUri: process.env.MONGO_URI,
     });
 });
