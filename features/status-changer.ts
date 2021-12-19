@@ -23,7 +23,7 @@ export default (client: Client) => {
             counter =0;
         }
 
-        setTimeout(updateStatus, 1000 * 5)
+        setTimeout(updateStatus, 1000 * 60 * 10)
     }
     updateStatus()
 }
