@@ -1,7 +1,7 @@
 import DiscordJS, { Intents, Message } from 'discord.js';
 import WOKCommands from 'wokcommands';
 import path from 'path';
-import mongoose from 'mongoose';
+//import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
 
