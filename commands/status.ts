@@ -6,14 +6,14 @@ const config = {
 const prefix = config.prefix
 
 const statusOptions = [
-    'in development',
+    'in_development',
     'sleeping',
     'working'
 ]
 export default {
 
-    category: 'fun',
-    description: 'punching people',
+    category: 'configuration',
+    description: 'changing status of the bot',
 
     minArgs: 1,
     expectedArgs: '<status>',
