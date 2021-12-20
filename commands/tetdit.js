@@ -16,7 +16,8 @@ module.exports = {
 
         const image = await Canvas.spank(avatar1, avatar2);
         let attachment = new MessageAttachment(image, 'image.png');
-        return message.channel.send(attachment);
+
+        message.channel.send(attachment);
 
 
     }
