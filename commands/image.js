@@ -10,8 +10,12 @@ const google = new img({
 
 module.exports = {
     name: 'image',
+    category: 'fun',
+    description: 'finding image',
+    testOnly: true,
+
     callback : async(message, args) => {
-        const query = args.join(" ");
+        const query = args[0]
         if(!query) return message.channel.send('nhập từ khóa bạn muốn tìm kiếm');
 
         const results = await google.scrape(query, 1);
