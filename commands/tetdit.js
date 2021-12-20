@@ -6,7 +6,7 @@ module.exports = {
     description: 'spanking people',
     minArgs: 1,
     expectedArgs: '<user @>',
-    slash: 'both',
+    slash: false,
     testOnly: true,
     callback: async ({Client, message, args}) => {
         const user = message.mentions.user.first() || message.author;
