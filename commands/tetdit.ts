@@ -23,6 +23,6 @@ export default {
         let image = await canvacord.Canvacord.spank(avatar1, avatar2);
         
         let attachment = new MessageAttachment(image, 'spank.png');
-        return message.channel.send(attachment)
+        return message.channel.send('',attachment)
     }
 } as ICommand

@@ -32,6 +32,6 @@ exports.default = {
         let avatar2 = message.author.displayAvatarURL({ format: 'png', dynamic: false });
         let image = yield canvacord_1.default.Canvacord.spank(avatar1, avatar2);
         let attachment = new discord_js_1.MessageAttachment(image, 'spank.png');
-        return message.channel.send(attachment);
+        return message.channel.send('', attachment);
     })
 };
