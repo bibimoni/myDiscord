@@ -14,6 +14,5 @@ module.exports = {
         let image = await canvacord.Canvacord.wasted(avatar);
         let attachment = new MessageAttachment(image, 'image.png');
         return message.channel.send(attachment);
-
     }  
 }
