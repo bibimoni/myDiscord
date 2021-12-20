@@ -9,8 +9,8 @@ module.exports = {
     slash: false,
     testOnly: true,
     callback: async ({Client, message, args}) => {
-        const user = message.mentions.user.first() || message.author;
-        const avatar1 = user.displayAvatarURL({format: 'png', dynamic: false});
+        const target = message.mentions.members.first() || message.author;
+        const avatar1 = target.displayAvatarURL({format: 'png', dynamic: false});
         const avatar2 = message.author.displayAvatarURL({format:'png', dynamic: false});
         const image = canvacord.canvacord.spank(avatar1, avatar2);
         let attachment = new MessageAttachment(image, 'image.png');
