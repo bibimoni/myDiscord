@@ -10,7 +10,7 @@ const google = new img({
 
 module.exports = {
     name: 'image',
-    run : async(Client, message, args) => {
+    callback : async(message, args) => {
         const query = args.join(" ");
         if(!query) return message.channel.send('nhập từ khóa bạn muốn tìm kiếm');
 
