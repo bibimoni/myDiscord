@@ -4,7 +4,6 @@ const img = require('images-scraper');
 const google = new img({
     puppeteer: {
         headless: true,
-
     }
 })
 
@@ -13,12 +12,10 @@ module.exports = {
     category: 'fun',
     description: 'finding image',
     testOnly: true,
+    expectedArgs: 'từ khóa',
 
     callback : async(message, args) => {
-        const query = args[0]
-        if(!query) return message.channel.send('nhập từ khóa bạn muốn tìm kiếm');
-
-        const results = await google.scrape(query, 1);
+        const results = await google.scrape(args[0], 1);
         message.channel.send(results[0].url);
 
     }
