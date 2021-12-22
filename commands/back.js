@@ -4,10 +4,13 @@ exports.default = {
     category: 'fun',
     description: 'alert',
     testOnly: true,
-    expectedArgs: '<user @>',
     callback: ({ message }) => {
-        let target = message.mentions.members.first() || message.author;
-        let back = target.toString() + ' back';
-        return back;
+        let target = message.mentions.members.first();
+        if (!target)
+            return 'im back';
+        if (target) {
+            let back = target.toString() + ' back';
+            return back;
+        }
     }
 };
