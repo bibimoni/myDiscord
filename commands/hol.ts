@@ -23,6 +23,8 @@ export default {
                     .setLabel('lower')
                     .setStyle('SUCCESS')
             )
-        await mgsInt.reply
-    }
+        await mgsInt.reply({
+            components: [row],
+        })
+    },
 } as ICommand
