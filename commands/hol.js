@@ -26,5 +26,8 @@ exports.default = {
             .setEmoji('⬇️')
             .setLabel('lower')
             .setStyle('SUCCESS'));
-    })
+        yield mgsInt.reply({
+            components: [row],
+        });
+    }),
 };
