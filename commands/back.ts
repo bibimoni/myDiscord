@@ -3,7 +3,6 @@ import { ICommand } from "wokcommands";
 export default {
     category: 'fun',
     description: 'alert',
-
     testOnly: true,
     callback: ({message}) => {
         let target = message.mentions.members.first()
