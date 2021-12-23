@@ -24,6 +24,7 @@ export default {
                     .setStyle('SUCCESS')
             )
         await mgsInt.reply({
+            content: 'asd',
             components: [row],
         })
     },

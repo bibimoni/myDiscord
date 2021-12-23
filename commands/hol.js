@@ -27,6 +27,7 @@ exports.default = {
             .setLabel('lower')
             .setStyle('SUCCESS'));
         yield mgsInt.reply({
+            content: 'asd',
             components: [row],
         });
     }),
